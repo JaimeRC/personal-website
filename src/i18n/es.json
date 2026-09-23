@@ -2,14 +2,20 @@
   "language": "es",
   "welcome": {
     "title": "Hola, soy",
-    "subtitle": "Soy desarrollador full-stack."
+    "subtitle": "Desarrollador Full Stack. Construyo productos web de principio a fin."
   },
   "about": {
     "title": "Sobre mí",
     "name": "Jaime",
     "surname": "Rubio",
     "profession": "Full Stack Developer",
-    "description": "Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.",
+    "description": "Desarrollador curioso al que le apasionan los retos y el aprendizaje continuo. Me interesan especialmente la arquitectura de software, el rendimiento, los patrones de diseño y la calidad del código, siempre guiado por las buenas prácticas. Soy una persona proactiva, dinámica y cercana, que disfruta trabajando en equipo.",
+    "location": {
+      "locality": "Málaga",
+      "region": "Andalucía",
+      "country": "España",
+      "countryCode": "ES"
+    },
     "foto": "profile"
   },
   "skills": [
@@ -198,7 +204,7 @@
     "title": "Experiencia profesional",
     "works": [
       {
-        "title": "Ingeniero de Software",
+        "title": "Software Developer",
         "company": "Ocasión Plus",
         "companyLogo": "ocasionplus",
         "place": "Madrid",
@@ -218,7 +224,7 @@
         "isActive": true
       },
       {
-        "title": "Ingeniero de Software",
+        "title": "Software Developer",
         "company": "forMarketer",
         "companyLogo": "formarketer",
         "place": "Barcelona",
@@ -640,14 +646,14 @@
   },
   "jsonLD": {
     "blog": {
-      "titular": "Página web de Jaime RC",
-      "description": "Breve descripción de mi trayectoria profesional a lo largo de los años",
+      "headline": "Jaime Rubio — Desarrollador Full Stack",
+      "description": "Perfil profesional de Jaime Rubio: experiencia, formación y proyectos como desarrollador Full Stack especializado en JavaScript, Node.js, React y AWS.",
       "articleSection": "Trayectoria profesional",
-      "articleBody": "Una breve descripción de mi trayectoria profesional a lo largo de los años"
+      "articleBody": "Recorrido profesional de Jaime Rubio como desarrollador Full Stack, con su experiencia laboral, formación y tecnologías dominadas."
     },
     "webPage": {
-      "name": "Página web de Jaime RC",
-      "description": "Breve descripción de mi trayectoria profesional a lo largo de los años"
+      "name": "Jaime Rubio — Desarrollador Full Stack",
+      "description": "Perfil profesional de Jaime Rubio: experiencia, formación y proyectos como desarrollador Full Stack especializado en JavaScript, Node.js, React y AWS."
     }
   }
 }

@@ -1,15 +1,21 @@
 {
   "language": "en",
   "welcome": {
-    "title": "Hi, i'm",
-    "subtitle": "I'm a full-stack developer."
+    "title": "Hi, I'm",
+    "subtitle": "Full Stack Developer. I build web products from start to finish."
   },
   "about": {
     "title": "About me",
     "name": "Jaime",
     "surname": "Rubio",
     "profession": "Full Stack Developer",
-    "description": "Curious that he loves challenges, constantly learning to keep my knowledge up to date, in particular, I have an interest in architecture, performance, design patterns, code quality and good practices. I consider myself a proactive, dynamic, empathetic and very happy person.",
+    "description": "A curious developer who loves challenges and continuous learning. I'm especially interested in software architecture, performance, design patterns and code quality, always driven by best practices. I'm a proactive, dynamic and approachable person who enjoys working as part of a team.",
+    "location": {
+      "locality": "Málaga",
+      "region": "Andalusia",
+      "country": "Spain",
+      "countryCode": "ES"
+    },
     "foto": "profile"
   },
   "skills": [
@@ -198,7 +204,7 @@
     "title": "Professional experience",
     "works": [
       {
-        "title": "Software engineer",
+        "title": "Software Developer",
         "company": "Ocasión Plus",
         "companyLogo": "ocasionplus",
         "place": "Madrid",
@@ -218,7 +224,7 @@
         "isActive": true
       },
       {
-        "title": "Software engineer",
+        "title": "Software Developer",
         "company": "forMarketer",
         "companyLogo": "formarketer",
         "place": "Barcelona",
@@ -637,14 +643,14 @@
   },
   "jsonLD": {
     "blog": {
-      "headline": "Jaime RC's website",
-      "description": "A brief description of my professional career over the years",
+      "headline": "Jaime Rubio — Full Stack Developer",
+      "description": "Professional profile of Jaime Rubio: experience, education and projects as a Full Stack developer specialized in JavaScript, Node.js, React and AWS.",
       "articleSection": "Professional career",
-      "articleBody": "A brief description of my professional career over the years"
+      "articleBody": "Professional journey of Jaime Rubio as a Full Stack developer, including work experience, education and the technologies he works with."
     },
     "webPage": {
-      "name": "Jaime RC's website",
-      "description": "A brief description of my professional career over the years"
+      "name": "Jaime Rubio — Full Stack Developer",
+      "description": "Professional profile of Jaime Rubio: experience, education and projects as a Full Stack developer specialized in JavaScript, Node.js, React and AWS."
     }
   }
 }

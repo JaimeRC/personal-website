@@ -6,27 +6,27 @@ export const ui = {
     [LANG.SPANISH]: {
         'lang.es':'Español',
         'lang.en':'Inglés',
-        'meta.title': 'Website de Jaime Rubio',
-        'meta.description': 'Website de Jaime Rubio',
+        'meta.title': 'Jaime Rubio — Desarrollador Full Stack | JavaScript, Node.js, React y AWS',
+        'meta.description': 'Jaime Rubio, desarrollador Full Stack en Málaga especializado en JavaScript, TypeScript, Node.js, React y AWS. Descubre mi experiencia, formación y proyectos.',
         'nav.brand': 'Jaime Rubio',
         'footer.brand': 'Jaime Rubio',
         'welcome.title':'Hola, soy',
-        'welcome.subtitle':'desarrollador full-stack',
+        'welcome.subtitle':'Desarrollador Full Stack. Construyo productos web de principio a fin.',
         'about.me': 'Sobre mí',
         'about.profession':'Full Stack Developer',
-        'about.description': 'Curioso que le encantan los retos, constantemente aprendiendo para mantener mis conocimientos al día, en particular, tengo interés por la arquitectura, rendimiento, patrones de diseño, calidad de código y buenas practicas. Me considero una persona proactiva, dinámica, empática y muy alegre.'
+        'about.description': 'Desarrollador curioso al que le apasionan los retos y el aprendizaje continuo. Me interesan especialmente la arquitectura de software, el rendimiento, los patrones de diseño y la calidad del código, siempre guiado por las buenas prácticas. Soy una persona proactiva, dinámica y cercana, que disfruta trabajando en equipo.'
     },
     [LANG.ENGLISH]: {
         'lang.es':'Spanish',
         'lang.en':'English',
-        'meta.title': 'Website of Jaime Rubio',
-        'meta.description': 'Website de Jaime Rubio',
+        'meta.title': 'Jaime Rubio — Full Stack Developer | JavaScript, Node.js, React & AWS',
+        'meta.description': 'Jaime Rubio, Full Stack developer based in Málaga specialized in JavaScript, TypeScript, Node.js, React and AWS. Explore my experience, education and projects.',
         'nav.brand': 'Jaime Rubio',
         'footer.brand': 'Jaime Rubio',
-        'welcome.title':"Hi, i'm",
-        'welcome.subtitle':"I'm full-stack developer",
+        'welcome.title':"Hi, I'm",
+        'welcome.subtitle':"Full Stack Developer. I build web products from start to finish.",
         'about.me': 'About me',
         'about.profession':'Full Stack Developer',
-        'about.description': 'Curious that he loves challenges, constantly learning to keep my knowledge up to date, in particular, I have an interest in architecture, performance, design patterns, code quality and good practices. I consider myself a proactive, dynamic, empathetic and very happy person.'
+        'about.description': "A curious developer who loves challenges and continuous learning. I'm especially interested in software architecture, performance, design patterns and code quality, always driven by best practices. I'm a proactive, dynamic and approachable person who enjoys working as part of a team."
     },
 } as const;
