@@ -14,10 +14,10 @@ const { image, name, website, city, courses } = company
 const imageUrl = IMAGES.training[image] || '';
 ---
 <div class="col">
-    <astro-heart>
-        <div id={name} data-set-company={company} class={`card cardTraining`}>
+    <training-card>
+        <div class={`card cardTraining`}>
             <div class={"companyImg"}>
-                <Image src={imageUrl} height={454} width={215} alt={name}/>
+                <Image src={imageUrl} width={400} height={160} alt={name}/>
             </div>
             <div class="accordion accordion-flush border-top" id={`accordionFlush-${index}`}>
                 <div class="accordion-item ">
@@ -33,7 +33,7 @@ const imageUrl = IMAGES.training[image] || '';
                                            href={website}
                                            target="_blank"
                                            class="link-success">
-                                        <h5 class="card-title">{name}</h5>
+                                        <h3 class="card-title h5">{name}</h3>
                                         </a>
                                     </span>
                                     <span>{city}</span>
@@ -55,7 +55,7 @@ const imageUrl = IMAGES.training[image] || '';
                                                     </div>
                                                     <div class={'col-1'}
                                                          style={{ cursor: 'pointer' }}
-                                                         data-bs-toggle={'tooltip' + _index}
+                                                         data-bs-toggle="tooltip"
                                                          data-bs-placement="top"
                                                          title={`${course.from} - ${course.to}`}>
                                                         <Icon name="mdi:calendar"/>
@@ -78,7 +78,7 @@ const imageUrl = IMAGES.training[image] || '';
                 </div>
             </div>
         </div>
-    </astro-heart>
+    </training-card>
 </div>
 
 <style>
@@ -88,8 +88,10 @@ const imageUrl = IMAGES.training[image] || '';
 
     .cardTraining img {
         width: 100%;
-        object-position: 0 center;
+        height: 100%;
+        object-position: center;
         object-fit: contain;
+        padding: 1.5rem;
     }
 
 
@@ -108,28 +110,28 @@ const imageUrl = IMAGES.training[image] || '';
     }
 
     .companyImg {
-        height: 215px;
+        height: 160px;
         display: flex;
         align-items: center;
+        justify-content: center;
         overflow: hidden;
     }
 </style>
 
 <script>
-    // Define el comportamiento para nuestro nuevo tipo de elemento HTML.
-    class AstroHeart extends HTMLElement {
+    // Sincroniza la clase .activeCard con el estado expandido del acordeón.
+    class TrainingCard extends HTMLElement {
         constructor() {
             super();
 
-            const { company } = this.dataset;
-            const button = this.querySelector('button');
-            const div = this.querySelector(`#${company}`)
-            button?.addEventListener('click', () => {
-                div?.classList.add("activeCard")
-            });
+            const card = this.querySelector('.cardTraining');
+            const collapse = this.querySelector('.accordion-collapse');
+            if (!card || !collapse) return;
+
+            collapse.addEventListener('shown.bs.collapse', () => card.classList.add('activeCard'));
+            collapse.addEventListener('hidden.bs.collapse', () => card.classList.remove('activeCard'));
         }
     }
 
-    // Dile al navegador que use nuestra clase AstroHeart para elementos <astro-heart>.
-    customElements.define('astro-heart', AstroHeart);
+    customElements.define('training-card', TrainingCard);
 </script>

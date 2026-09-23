@@ -11,13 +11,13 @@ const frameworksImg = IMAGES.frameworks as FrameworksImg
 ---
 <div class={"row mt-5"}>
     <div class={'col text-center'}>
-        {(frameworks as Frameworks[]).map(({ image, name, width }, index) => {
+        {(frameworks as Frameworks[]).map(({ image, name, width }) => {
             return (
                     <Image
                             src={frameworksImg[image]}
                             height={40} width={width || 40}
                             alt={name}
-                            data-bs-toggle={'tooltip' + index}
+                            data-bs-toggle="tooltip"
                             data-bs-placement="top"
                             title={name}
                             class={'rounded-pill m-2'}

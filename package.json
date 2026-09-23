@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "del": "rm -rf .astro dist",
     "dev": "astro dev",
@@ -11,12 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/sitemap": "^3.1.6",
-    "@iconify-json/mdi": "^1.2.0",
-    "astro": "^4.15.7",
-    "astro-icon": "^1.1.1",
-    "bootstrap": "^5.3.3",
-    "typescript": "^5.6.2"
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/sitemap": "^3.7.4",
+    "@iconify-json/mdi": "^1.2.3",
+    "astro": "^7.3.4",
+    "astro-icon": "^1.2.0",
+    "bootstrap": "^5.3.8",
+    "typescript": "^5.9.3"
   }
 }

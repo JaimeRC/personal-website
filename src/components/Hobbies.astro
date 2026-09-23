@@ -1,4 +1,4 @@
-Hobby---
+---
 import CustomSection from "./CustomSection.astro";
 import type { Interests, Hobby } from "../types";
 import IMAGES from '../data/images.json'
@@ -15,82 +15,82 @@ const interestsImg = IMAGES.interests as Interests
     <hr class={'mt-1'}/>
     <div class="row mt-5">
         <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-0">
-            <button class={'imageWrapper w-100 border-0'}>
+            <div class={'imageWrapper w-100 border-0'}>
                 <div class={'imageSrc'}
                      style={{ backgroundImage: `url(${interestsImg[hobbies[0].url]})` }}/>
                 <div class={'imageBackdrop'}/>
                 <div class={'imageButton'}>
-                    <label color="inherit" class={'imageTitle fw-bold'}>
+                    <span class={'imageTitle fw-bold'}>
                         {hobbies[0].title.toUpperCase()}
-                    </label>
+                    </span>
                 </div>
-            </button>
+            </div>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 px-0">
-            <button class={'imageWrapper w-100 border-0'}>
+            <div class={'imageWrapper w-100 border-0'}>
                 <div class={'imageSrc'}
                      style={{ backgroundImage: `url(${IMAGES.interests[hobbies[1].url]})` }}/>
                 <div class={'imageBackdrop'}/>
                 <div class={'imageButton'}>
-                    <label color="inherit" class={'imageTitle fw-bold'}>
+                    <span class={'imageTitle fw-bold'}>
                         {hobbies[1].title.toUpperCase()}
-                    </label>
+                    </span>
                 </div>
-            </button>
+            </div>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 px-0">
-            <button class={'imageWrapper w-100 border-0'}>
+            <div class={'imageWrapper w-100 border-0'}>
                 <div class={'imageSrc'}
                      style={{ backgroundImage: `url(${IMAGES.interests[hobbies[2].url]})` }}/>
                 <div class={'imageBackdrop'}/>
                 <div class={'imageButton'}>
-                    <label color="inherit" class={'imageTitle fw-bold'}>
+                    <span class={'imageTitle fw-bold'}>
                         {hobbies[2].title.toUpperCase()}
-                    </label>
+                    </span>
                 </div>
-            </button>
+            </div>
         </div>
     </div>
     <div class="row mb-5">
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
-            <button class={'imageWrapper w-100 border-0'}>
+            <div class={'imageWrapper w-100 border-0'}>
                 <div class={'imageSrc'}
                      style={{ backgroundImage: `url(${IMAGES.interests[hobbies[3].url]})` }}/>
                 <div class={'imageBackdrop'}/>
                 <div class={'imageButton'}>
-                    <label color="inherit" class={'imageTitle fw-bold'}>
+                    <span class={'imageTitle fw-bold'}>
                         {hobbies[3].title.toUpperCase()}
-                    </label>
+                    </span>
                 </div>
-            </button>
+            </div>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
-            <button class={'imageWrapper w-100 border-0'}>
+            <div class={'imageWrapper w-100 border-0'}>
                 <div class={'imageSrc'}
                      style={{ backgroundImage: `url(${IMAGES.interests[hobbies[4].url]})` }}/>
                 <div class={'imageBackdrop'}/>
                 <div class={'imageButton'}>
-                    <label color="inherit" class={'imageTitle fw-bold'}>
+                    <span class={'imageTitle fw-bold'}>
                         {hobbies[4].title.toUpperCase()}
-                    </label>
+                    </span>
                 </div>
-            </button>
+            </div>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
-            <button class={'imageWrapper w-100 border-0'}>
+            <div class={'imageWrapper w-100 border-0'}>
                 <div class={'imageSrc'}
                      style={{ backgroundImage: `url(${IMAGES.interests[hobbies[5].url]})` }}/>
                 <div class={'imageBackdrop'}/>
                 <div class={'imageButton'}>
-                    <label color="inherit" class={'imageTitle fw-bold'}>
+                    <span class={'imageTitle fw-bold'}>
                         {hobbies[5].title.toUpperCase()}
-                    </label>
+                    </span>
                 </div>
-            </button>
+            </div>
         </div>
     </div>
 </CustomSection>
@@ -140,7 +140,7 @@ const interestsImg = IMAGES.interests as Interests
         opacity: 0
     }
 
-    .imageWrapper :hover .imageTitle {
+    .imageWrapper:hover .imageTitle {
         border: 4px solid currentColor;
     }
 

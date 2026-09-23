@@ -4,6 +4,7 @@ const robotsTxt = `
 User-agent: *
 Allow: /
 Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
+# LLM-friendly summary: ${new URL('llms.txt', import.meta.env.SITE).href}
 `.trim();
 
 export const GET: APIRoute = () => {

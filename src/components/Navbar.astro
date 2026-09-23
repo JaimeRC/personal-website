@@ -14,10 +14,10 @@ const t = useTranslations(lang);
                     aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"/>
             </button>
-            <label class="navbar-brand">{t('nav.brand')}</label>
+            <span class="navbar-brand">{t('nav.brand')}</span>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <div class="navbar-nav me-auto"/>
-                <form class="d-flex">
+                <div class="d-flex">
                     <ul class="navbar-nav me-2 text-center">
                         <li class="nav-item">
                             <a
@@ -52,7 +52,7 @@ const t = useTranslations(lang);
                             <LanguagePicker/>
                         </li>
                     </ul>
-                </form>
+                </div>
             </div>
         </div>
     </nav>
